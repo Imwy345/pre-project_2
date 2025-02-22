@@ -10,10 +10,10 @@ import web.service.UserService;
 import javax.validation.Valid;
 
 @Controller
-public class UserController {
+public class UserControllerImpl implements UserControllerInt {
     private final UserService userService;
 
-    public UserController(UserService userService) {
+    public UserControllerImpl(UserService userService) {
         this.userService = userService;
     }
 
